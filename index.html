@@ -1,0 +1,129 @@
+<!--
+  =========================================================================
+  Minimal academic homepage (for GitHub Pages)
+  -------------------------------------------------------------------------
+  Keep this file named index.html and push to <username>.github.io
+  Edit the [EDIT] parts. No photo, single column, plain and fast.
+  =========================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Minsu Kim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper: #FCFCFA;
+    --ink: #1C1B19;
+    --muted: #6E6B64;
+    --accent: #1F5C5C;
+    --rule: #E7E5DE;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Inter", -apple-system, system-ui, sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 88px 24px 96px; }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+  h1 {
+    font-family: "Newsreader", serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+  }
+  .sub { color: var(--muted); margin-top: 4px; }
+
+  .links { margin-top: 14px; font-size: 15px; color: var(--muted); }
+  .links a { margin-right: 4px; }
+  .links span { margin: 0 8px; color: var(--rule); }
+
+  .block { margin-top: 40px; }
+  .label {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  p { max-width: 60ch; }
+  p + p { margin-top: 12px; }
+
+  .areas { list-style: none; }
+  .areas li { padding: 3px 0; }
+  .areas b { font-weight: 500; }
+  .areas span { color: var(--muted); }
+
+  .pub { padding: 12px 0; border-top: 1px solid var(--rule); }
+  .pub:first-of-type { border-top: none; }
+  .pub .t { font-weight: 500; }
+  .pub .a { color: var(--muted); font-size: 15px; }
+  .pub .a b { color: var(--ink); font-weight: 500; }
+  .pub .v { color: var(--muted); font-size: 14px; font-style: italic; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Minsu Kim</h1>
+  <div class="sub">Ph.D. Student in AI, KAIST &middot; advised by
+    <a href="https://fbsqkd.github.io/">Se-Young Yun</a></div>
+  <div class="links">
+    <a href="mailto:you@kaist.ac.kr">Email</a><span>/</span> <!-- [EDIT] -->
+    <a href="https://scholar.google.com/">Scholar</a><span>/</span> <!-- [EDIT] -->
+    <a href="https://github.com/username">GitHub</a> <!-- [EDIT] -->
+  </div>
+
+  <div class="block">
+    <p>
+      I study reasoning and the epistemic foundations of large language models.
+      Previously I did my M.S. in AI at KAIST, advised by
+      <a href="https://jamesthorne.com/">James Thorne</a>.
+    </p>
+  </div>
+
+  <div class="block">
+    <div class="label">Research</div>
+    <ul class="areas">
+      <li><b>Reinforcement Learning for Reasoning</b> <span>&mdash; reward shaping, exploration, credit assignment</span></li>
+      <li><b>Formal Reasoning</b> <span>&mdash; RL with symbolic verifiers; agentic formal reasoning; compositional generalization</span></li>
+      <li><b>Epistemology of Language Models</b> <span>&mdash; knowledge, belief, introspection, metacognition</span></li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <div class="label">Publications</div>
+
+    <div class="pub">
+      <div class="t">Process-Verified Reinforcement Learning for Theorem Proving via Lean</div>
+      <div class="a"><b>Minsu Kim</b>, Se-Young Yun</div>
+      <div class="v">ICLR 2026</div>
+    </div>
+
+    <div class="pub">
+      <div class="t">From Evidence to Belief: A Bayesian Epistemology Approach to Language Models</div>
+      <div class="a"><b>Minsu Kim</b>, Sangryul Kim, James Thorne</div>
+      <div class="v">NAACL 2025 (Main)</div>
+    </div>
+
+    <div class="pub">
+      <div class="t">Epistemology of Language Models: Do Language Models Have Holistic Knowledge?</div>
+      <div class="a"><b>Minsu Kim</b>, James Thorne</div>
+      <div class="v">ACL 2024 (Findings)</div>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>
